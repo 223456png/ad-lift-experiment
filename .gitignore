@@ -1,0 +1,25 @@
+# ── 数据：297MB，超过 GitHub 单文件 100MB 上限，不进仓库 ──
+# 下载方式见 README「数据」一节
+data/*.csv
+data/*.csv.gz
+data/*.zip
+data/*.parquet
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# ── 编辑器 / 系统 ──
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ── 本地笔记（不进公开仓库）──
+NOTES.md
+TODO.md
+.duckdb_tmp/

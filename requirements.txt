@@ -1,0 +1,20 @@
+# 运行环境：Python 3.11+
+# 实测版本见文件末尾注释
+
+duckdb>=1.0          # 建表、SQL 查询、抽样（单机跑 1,398 万行）
+numpy>=2.0            # 数值计算（np.trapezoid 需要 2.0+）
+pandas>=2.0          # 数据框
+scipy>=1.11          # 统计检验、优化（logistic 拟合）
+matplotlib>=3.8      # 图表（需要中文字体，见下）
+
+# 中文字体：Windows 自带 Microsoft YaHei / SimHei；
+# macOS 可用 PingFang SC；Linux 需 apt install fonts-wqy-zenhei
+# 若图表中文显示为方块，改 src/figures.py 顶部 rcParams 里的字体名
+
+# ── 实测通过的版本（2026-10）────────────────────────────
+# python    3.13.12
+# duckdb    2.0.0
+# numpy     2.5.3
+# pandas    3.0.6
+# scipy     1.18.1
+# matplotlib 3.10.x
